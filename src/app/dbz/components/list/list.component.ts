@@ -8,6 +8,8 @@ import { Character } from '../../interfaces/character.interface';
 })
 export class ListComponent {
 
+  // Se puede especificar otro nombre
+  // @Input( {alias: 'characterTest'})
   @Input()
   public characterList: Character[] = [{
     name: 'Trunks',
