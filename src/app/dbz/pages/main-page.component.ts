@@ -23,4 +23,16 @@ export class MainPageComponent {
     }
   ];
 
+  onNewCharacterMain( character: Character ): void {
+
+    this.characters.push(character);
+    
+  }
+
+  onDeleteMain( index: number ): void {
+    this.characters.splice(index, 1);
+    console.log(`index from mainpage ${index}`);
+    
+  }
+
 }
